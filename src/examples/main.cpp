@@ -6,7 +6,7 @@
  */
 
 #include "../core/alex.h"
-
+#include <iostream> 
 #define KEY_TYPE int
 #define PAYLOAD_TYPE int
 
@@ -21,6 +21,7 @@ int main(int, char**) {
     values[i].first = i;
     values[i].second = dis(gen);
   }
+  cout << num_keys << endl;
 
   alex::Alex<KEY_TYPE, PAYLOAD_TYPE> index;
 
